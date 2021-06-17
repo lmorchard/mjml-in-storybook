@@ -11,7 +11,7 @@ And hopefully you see a Storybook instance load up at http://localhost:6006
 
 ## Interesting bits
 
-- The MJML service lives in `.bin/mjml-server`
+- The MJML service lives in `bin/mjml-server.ts`
 - Email templates live in `src/email-templates`
 - Some interesting components live in `src/lib`
 
