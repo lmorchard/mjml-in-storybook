@@ -15967,6 +15967,11 @@ use-latest@^1.0.0:
   dependencies:
     use-isomorphic-layout-effect "^1.0.0"
 
+use-sse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/use-sse/-/use-sse-2.0.1.tgz#8c4c389d310aa878f8b61c4ecd47a2c5d6f4cfd5"
+  integrity sha512-fsq+7VklgNiHEU2FqpI/DijlX5DoveOFtyazrA/8vXuvzf5lPyXRWcSWDZef6NsKdh9cqtIfKD7rMkgcmFHxUA==
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
@@ -16186,11 +16191,6 @@ web-resource-inliner@^5.0.0:
     mime "^2.4.6"
     node-fetch "^2.6.0"
     valid-data-url "^3.0.0"
-
-web-vitals@^1.0.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
-  integrity sha512-PFMKIY+bRSXlMxVAQ+m2aw9c/ioUYfDgrYot0YUa+/xa0sakubWhSDyxAKwzymvXVdF4CZI71g06W+mqhzu6ig==
 
 webidl-conversions@^5.0.0:
   version "5.0.0"

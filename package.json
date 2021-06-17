@@ -18,17 +18,17 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "use-sse": "^2.0.1"
   },
   "scripts": {
     "start": "npm-run-all -p watch:mjml storybook",
-    "watch:mjml": "nodemon -e ts,tsx,js,mjs,json --watch lib --watch bin --exec \"yarn start:mjml\"",
+    "watch:mjml": "nodemon -e ts,tsx,js,mjs,json --watch src --exec \"yarn start:mjml\"",
     "start:mjml": "ts-node bin/mjml-server.ts",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

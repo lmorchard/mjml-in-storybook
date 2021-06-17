@@ -10,17 +10,22 @@ export const RenderedEmail: React.FC<RenderedEmailProps> = ({
   variables,
 }) => {
   const [renderedHtml, setRenderedHtml] = useState<string>("");
-
   useEffect(() => {
-    renderEmail({ template, variables }).then((result) =>
+    renderUsingMJML({ template, variables }).then((result) =>
       setRenderedHtml(result)
     );
   }, [template, variables, setRenderedHtml]);
 
-  return <div dangerouslySetInnerHTML={{ __html: renderedHtml }} />;
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: renderedHtml,
+      }}
+    />
+  );
 };
 
-async function renderEmail({
+async function renderUsingMJML({
   template = "welcome",
   apiUrl = "http://localhost:8192",
   variables,
